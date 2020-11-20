@@ -443,19 +443,39 @@ main section {
 
 
 .rank-content {
-    margin-top: 20px;
+    margin: 20px auto 0 auto;
     background-color: #f5f5f5;
-    width: 100%;
-    height: 470px;
+    width: 690px;
+    height: 472px;
 }
 
 
 .login-area {
-    padding: 1px;
+    position: relative;
+    padding: 20px;
     width: 100%;
     height: 125px;
-    background-clip: content-box;
+    background-clip: border-box;
     background-image: linear-gradient(to top, #e6e6e6, #ffffff);
+}
+.login-text{
+    font-size: 12px;
+    color: #666666;
+}
+.login-btn {
+    position: absolute;
+    height: 31px;
+    width: 100px;
+    background: url("../img/ui.png") no-repeat;
+    background-position: 0 -195px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 12px;
+    color: white;
+}
+.login-btn:hover {
+    background-position: -110px -195px;
 }
 .singer-area {
     padding: 0 15px;
@@ -668,6 +688,57 @@ footer {
     background: url(../img/foot_icons_names.png) no-repeat;
     background-position: 4px -69px;
     background-size: 180px 140px;
+}
+.rank-group {
+    width: 230px;
+}
+.rank-group-title-area{
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 100px;
+}
+/* 排行的图片 */
+.rank-group1-title-img {
+    height: 80px;
+    width: 80px;
+}
+.rank-group1-title-text {
+    display:  block;
+    width: 100%;
+    padding-left: 1em;
+    font: bold 14px "微软雅黑";
+}
+/* 排行中每一个li的大小 */
+.rank-group li {
+    height: 32px;
+}
+/* 排行数字 */
+.rank-group1-num {
+    color: #666666;
+    padding: 0 10px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+.rank-group1-title-text-img1 {
+    margin: 0 10px 0 20px;
+    height: 22px;
+    width: 22px;
+    background: url("../img/ui.png") no-repeat;
+    background-position: -267px -205px;
+}
+.rank-group1-title-text-img2 {
+    height: 22px;
+    width: 22px;
+    background: url("../img/ui.png") no-repeat;
+    background-position: -300px -205px;
+}
+/* 排行内容 */
+.rank-group1-content {
+    font-size: 12px;
+    line-height: 32px;
+}
+.rank-group1-list li:nth-child(odd){
+    background: rgb(232,232,232);
 }
 .footer-text p{
     height: 24px;
